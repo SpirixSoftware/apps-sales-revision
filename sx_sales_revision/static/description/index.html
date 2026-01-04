@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             background-color: #f4f4f9;
             color: #333;
         }
+
         .container {
             width: 80%;
             margin: auto;
@@ -21,99 +23,114 @@
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: #444;
         }
+
         a {
             color: #007BFF;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-<div class="container">
-    <h1 style="text-align: center;">Sales Quotation/Order Revision</h1>
-    <h2>Overview</h2>
-    <span>
-        The <strong>Sales Quotation/Order Revision</strong> module, developed by Spirix Software, enhances the Odoo
-        Sales application by introducing the ability to revise sales quotations/orders and track their revision history.
-        This feature is particularly useful for businesses that require a clear audit trail of changes made to sales
-        orders over time.
-    </span>
+    <div class="container">
+        <h1 style="text-align: center;">Sales Quotation/Order Revision</h1>
+        <h2>Overview</h2>
+        <span>
+            The <strong>Sales Quotation/Order Revision</strong> module, developed by Spirix Software, enhances the Odoo
+            Sales application by introducing the ability to revise sales quotations/orders and track their revision
+            history.
+            This feature is particularly useful for businesses that require a clear audit trail of changes made to sales
+            orders over time.
+        </span>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li><strong>Revision Tracking</strong>: Allows users to create revisions of sales quotations/orders.</li>
-        <li><strong>State Management</strong>: Adds new states (<code>has_revision</code>, <code>revised</code>) to the
-            sales order workflow.
-        </li>
-        <li><strong>Revision Family View</strong>: Displays all revisions related to a sales order in a dedicated tab.
-        </li>
-        <li><strong>Enhanced Buttons</strong>: Customizes the visibility of action buttons based on the state of the
-            sales order.
-        </li>
-        <li><strong>Audit Trail</strong>: Maintains a clear history of all revisions for better traceability.</li>
-        <li><strong>Confirm Order</strong>: On confirmation of any order, other linked (Revised) orders will be
-            canceled.
-        </li>
-    </ul>
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Revision Tracking</strong>: Allows users to create revisions of sales quotations/orders.</li>
+            <li><strong>State Management</strong>: Adds new states (<code>has_revision</code>, <code>revised</code>) to
+                the
+                sales order workflow.
+            </li>
+            <li><strong>Revision Family View</strong>: Displays all revisions related to a sales order in a dedicated
+                tab.
+            </li>
+            <li><strong>Enhanced Buttons</strong>: Customizes the visibility of action buttons based on the state of the
+                sales order.
+            </li>
+            <li><strong>Audit Trail</strong>: Maintains a clear history of all revisions for better traceability.</li>
+            <li><strong>Confirm Order</strong>: On confirmation of any order, other linked (Revised) orders will be
+                canceled.
+            </li>
+        </ul>
 
-    <h2>Installation</h2>
-    <ol>
-        <li>Ensure that the <code>sale_management</code> module is installed in your Odoo instance.</li>
-        <li>Copy the <code>sx_sales_revision</code> module folder into your Odoo addons directory.</li>
-        <li>Update the module list by navigating to <strong>Apps</strong> in the Odoo backend and clicking on <strong>Update
-            Apps List</strong>.
-        </li>
-        <li>Search for "Sales Quotation/Order Revision" in the Apps menu and install the module.</li>
-    </ol>
+        <h2>Installation</h2>
+        <ol>
+            <li>Ensure that the <code>sale_management</code> module is installed in your Odoo instance.</li>
+            <li>Copy the <code>sx_sales_revision</code> module folder into your Odoo addons directory.</li>
+            <li>Update the module list by navigating to <strong>Apps</strong> in the Odoo backend and clicking on
+                <strong>Update
+                    Apps List</strong>.
+            </li>
+            <li>Search for "Sales Quotation/Order Revision" in the Apps menu and install the module.</li>
+        </ol>
 
-    <h2 style="text-align: center;">Usage</h2>
-    <h3>Creating a Revision</h3>
-    <ol>
-        <li>Open a sales quotation/order in the Odoo Sales module.</li>
-        <li>Ensure the order is in one of the following states: <code>sent</code>, <code>has_revision</code>, or <code>revised</code>.
-        </li>
-        <li>Click the <strong>Create Revision</strong> button in the header.</li>
-        <li>A new sales order will be created as a revision of the current order.</li>
-    </ol>
+        <h2 style="text-align: center;">Usage</h2>
+        <h3>Creating a Revision</h3>
+        <ol>
+            <li>Open a sales quotation/order in the Odoo Sales module.</li>
+            <li>Ensure the order is in one of the following states: <code>sent</code>, <code>has_revision</code>, or
+                <code>revised</code>.
+            </li>
+            <li>Click the <strong>Create Revision</strong> button in the header.</li>
+            <li>A new sales order will be created as a revision of the current order.</li>
+        </ol>
 
-    <h3>Viewing Revisions</h3>
-    <ol>
-        <li>Open a sales order with revisions.</li>
-        <li>Navigate to the <strong>Sale Revisions</strong> tab.</li>
-        <li>View the list of all related revisions, including details such as date, customer, salesperson, and state.
-        </li>
-    </ol>
+        <h3>Viewing Revisions</h3>
+        <ol>
+            <li>Open a sales order with revisions.</li>
+            <li>Navigate to the <strong>Sale Revisions</strong> tab.</li>
+            <li>View the list of all related revisions, including details such as date, customer, salesperson, and
+                state.
+            </li>
+        </ol>
 
-    <h3>Revision Count</h3>
-    <span>
-        The revision count is displayed as a stat button in the sales order form view. Clicking the stat button will
-        show all revisions in the order family.
-    </span>
+        <h3>Revision Count</h3>
+        <span>
+            The revision count is displayed as a stat button in the sales order form view. Clicking the stat button will
+            show all revisions in the order family.
+        </span>
 
-    <div style="text-align: center;">
-        <a href="https://drive.google.com/file/d/1YL_Lb2kgRftf_yBArWH4dYDQYI6Mz7so/view?usp=drive_linke" target="_blank"
-           style="display: inline-block; padding: 12px 24px; background-color: #e74c3c; color: white; margin: 20px;
-              font-weight: bold; border-radius: 5px; text-decoration: none;">
-            ▶️ Watch Demo Video
-        </a>
-    </div>
-    <h2>License</h2>
-    <span>
-        This module is licensed under the Odoo Proprietary License v1.0 (OPL-1).
-    </span>
+        <div style="text-align: center;">
+            <a href="https://drive.google.com/file/d/1YL_Lb2kgRftf_yBArWH4dYDQYI6Mz7so/view?usp=drive_linke"
+                target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #e74c3c; color: white; margin: 20px;
+                font-weight: bold; border-radius: 5px; text-decoration: none;">
+                ▶️ Watch Demo Video
+            </a>
+            ref url: https://drive.google.com/file/d/1YL_Lb2kgRftf_yBArWH4dYDQYI6Mz7so/view?usp=drive_linke
+        </div>
+        <h2>License</h2>
+        <span>
+            This module is licensed under the Odoo Proprietary License v1.0 (OPL-1).
+        </span>
 
-    <h2>Author</h2>
+        <h2>Author</h2>
 
         <div><strong>Company</strong>: Spirix Software</div>
         <div><strong>Website</strong>: <a href="https://spirixsoftware.in/">https://spirixsoftware.in/</a></div>
         <div><strong>Maintainer</strong>: Spirix Software</div>
-        <div>For any inquiries or support, please write to <a href="mailto:spirixsoftware@zohomail.in">spirixsoftware@zohomail.in</a>.</div>
+        <div>For any inquiries or support, please write to <a
+                href="mailto:spirixsoftware@zohomail.in">spirixsoftware@zohomail.in</a>.</div>
 
-</div>
+    </div>
 </body>
+
 </html>
