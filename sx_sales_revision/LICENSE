@@ -1,0 +1,110 @@
+Odoo Proprietary License v1.0 (OPL-1)
+
+Copyright (c) 2025 Spirix Software
+Website: https://spirixsoftware.in/
+
+This software and its associated source code are the exclusive property
+of Spirix Software.
+
+Permission is granted to use this software solely in accordance with
+the terms agreed upon with Spirix Software.
+
+--------------------------------------------------
+RESTRICTIONS
+--------------------------------------------------
+
+Without prior written permission from Spirix Software, the user may NOT:
+
+- Copy, reproduce, or distribute the source code
+- Modify, reverse engineer, or create derivative works
+- Resell, sublicense, or commercially redistribute the software
+- Publish the source code in any public or private repository
+
+--------------------------------------------------
+DISCLAIMER OF WARRANTY
+--------------------------------------------------
+
+This software is provided "AS IS" without warranty of any kind, express
+or implied, including but not limited to warranties of merchantability,
+fitness for a particular purpose, accuracy, or non-infringement.
+
+--------------------------------------------------
+LIMITATION OF LIABILITY
+--------------------------------------------------
+
+In no event shall Spirix Software, its authors, or contributors be liable
+for any damages including, but not limited to:
+
+- Data loss or data corruption
+- Database inconsistency or system failure
+- Loss of profits, revenue, or business opportunity
+- Business interruption or downtime
+- Security breaches or unauthorized access
+
+whether arising from installation, usage, misuse, upgrade, or removal
+of this software, even if advised of the possibility of such damages.
+
+--------------------------------------------------
+NO COMPATIBILITY GUARANTEE
+--------------------------------------------------
+
+Spirix Software does not guarantee compatibility with:
+- Custom or third-party Odoo modules
+- Modified databases
+- Specific Odoo versions
+- Custom server environments
+
+--------------------------------------------------
+NO SUPPORT OBLIGATION
+--------------------------------------------------
+
+This license does not include support, maintenance, updates, or bug
+fixes unless explicitly agreed in writing.
+
+--------------------------------------------------
+USER RESPONSIBILITY
+--------------------------------------------------
+
+The user is solely responsible for:
+- Maintaining full system and database backups
+- Testing in staging or development environments
+- Ensuring compliance with local laws and regulations
+- Verifying functional.ops compatibility with business processes
+
+--------------------------------------------------
+NO LEGAL OR FINANCIAL ADVICE
+--------------------------------------------------
+
+This software does not provide legal, financial, tax, or compliance
+advice. All business decisions made using this software are the sole
+responsibility of the user.
+
+--------------------------------------------------
+INDEMNIFICATION
+--------------------------------------------------
+
+The user agrees to indemnify and hold harmless Spirix Software against
+any claims, damages, or liabilities arising from misuse, modification,
+or unauthorized distribution of this software.
+
+--------------------------------------------------
+TERMINATION
+--------------------------------------------------
+
+Any violation of this license shall result in immediate termination of
+the right to use this software, without refund or notice.
+
+--------------------------------------------------
+FORCE MAJEURE
+--------------------------------------------------
+
+Spirix Software shall not be held liable for failure or delay caused by
+events beyond reasonable control, including but not limited to natural
+disasters, cyber attacks, hardware failure, or third-party service
+outages.
+
+
+--------------------------------------------------
+
+This software is licensed under the Odoo Proprietary License v1.0 (OPL-1).
+All rights not expressly granted are reserved by Spirix Software.
