@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
             <xpath expr="//div[@name='button_box']" position="inside">
                 <field name="revision_count" invisible="1"/>
+                <field name="revision_history_count" invisible="1"/>
                 <button class="oe_stat_button" type="object"
                         name="action_view_revised_orders"
                         icon="fa-pencil-square-o"
@@ -34,7 +35,7 @@
                         invisible="state not in ['sent','has_revision', 'revised']"/>
             </xpath>
             <xpath expr="//notebook/page[last()]" position="after">
-                <page name="sales_revisions" string="Sale Revisions" invisible="revision_count == 0">
+                <page name="sales_revisions" string="Sale Revisions" invisible="revision_history_count == 0">
                     <field name="revised_order_ids">
                         <list>
                             <field name="date_order"/>

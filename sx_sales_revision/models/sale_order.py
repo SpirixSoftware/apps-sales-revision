@@ -21,7 +21,15 @@ class SaleOrder(models.Model):
         string="Revision Count",
         compute="_compute_revision_count",
         store=True)
+    revision_history_count = fields.Integer(
+        string="Has Revision History",
+        compute="_compute_revision_history_count",
+        store=True)
 
+    @api.depends('revised_order_ids')
+    def _compute_revision_history_count(self):
+        for rec in self:
+            rec.revision_history_count = len(rec.revised_order_ids)
 
     def _compute_revision_count(self):
         for rec in self:

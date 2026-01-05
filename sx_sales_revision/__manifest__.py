@@ -5,7 +5,7 @@
 
 {
     'name': 'Quotation/Sale Revision',
-    'version': '19.0.1.0.0',
+    'version': '19.0.1.0.1',
     'summary': 'Allows users to revise sales quotations/orders and track their history.',
     'category': 'Sales',
     'author': 'Spirix Software',
